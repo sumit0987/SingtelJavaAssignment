@@ -17,6 +17,13 @@ public class Solution {
 		Animal chicken = new CluckBehaviour(new WalkBehaviour(bird1));
 		System.out.println(chicken.getSoundType());
 		System.out.println(chicken.getMovememntType());
+		
+		//for Question 3 i.e rooster with cock-a-doodle-doo behaviour
+		//I have not created any relationship type between chicken and rooster as I am decorationg objects with its behaviour 
+		Animal bird2 = new Bird();
+		Animal rooster = new CockaDoodleBehaviour(bird2);
+		System.out.println(rooster.getSoundType());
+
 	}
 
 }
