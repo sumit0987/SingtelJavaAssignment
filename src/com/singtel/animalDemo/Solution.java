@@ -23,6 +23,21 @@ public class Solution {
 		Animal bird2 = new Bird();
 		Animal rooster = new CockaDoodleBehaviour(bird2);
 		System.out.println(rooster.getSoundType());
+		
+		//for Question 4 i.e parrot living near a dog, a cat and a rooster
+		//I have kept the parrot maintainable by adding the required behaviour whenever needed.
+		//If a parrot is living near a duck then I will add QuackBehaviour to the parrot
+		Animal parrot=new Bird();
+		Animal parrotWithDog=new BarkingBehavior(parrot);
+		System.out.println(parrotWithDog.getSoundType());
+		
+		Animal parrot2=new Bird();
+		Animal parrotWithCat=new MeowBehaviour(parrot2);
+		System.out.println(parrotWithCat.getSoundType());
+		
+		Animal parrot3=new Bird();
+		Animal parrotWithRooster=new CockaDoodleBehaviour(parrot3);
+		System.out.println(parrotWithRooster.getSoundType());
 
 	}
 
