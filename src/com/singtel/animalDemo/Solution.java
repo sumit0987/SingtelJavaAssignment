@@ -38,6 +38,13 @@ public class Solution {
 		Animal parrot3=new Bird();
 		Animal parrotWithRooster=new CockaDoodleBehaviour(parrot3);
 		System.out.println(parrotWithRooster.getSoundType());
+		
+		//For question B(1), Fish object which can swim
+		Animal fish = new SwimBehaviour(new Fish());
+		System.out.println(fish.getMovememntType());
+		
+		
+		
 
 	}
 
