@@ -43,6 +43,15 @@ public class Solution {
 		Animal fish = new SwimBehaviour(new Fish());
 		System.out.println(fish.getMovememntType());
 		
+		//For question B(2), Fish object which can swim
+		//similarly added make jokes and eat fish bevaiours to shark and clownfish objects respectively
+		Animal fish1 = new Fish();
+		Animal sharkfish = new SwimBehaviour(new EatFishBehavior(fish1));
+		System.out.println(sharkfish.getSoundType());
+		Animal fish2 = new Fish();
+		Animal clownfish = new SwimBehaviour(new MakeJokesBehavior(fish2));
+		System.out.println(clownfish.getSoundType());
+		
 		
 		
 
