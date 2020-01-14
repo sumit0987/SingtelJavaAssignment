@@ -52,7 +52,13 @@ public class Solution {
 		Animal clownfish = new SwimBehaviour(new MakeJokesBehavior(fish2));
 		System.out.println(clownfish.getSoundType());
 		
-		
+		//For question D(1,2), butterfly and caterpillar fly and crawl behaviours
+		Animal bird3 = new Bird();
+		Animal butterfly = new FlyBehaviour(bird3);
+		System.out.println(butterfly.getMovememntType());
+		Animal bird4 = new Bird();
+		Animal caterPillar= new CrawlBehaviour(bird4);
+		System.out.println(caterPillar.getMovememntType());
 		
 
 	}
